@@ -2,49 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Single Price Grid Component</title>
 </head>
-<body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<body class="bg-lightGray h-screen w-screen p-8 font-Karla flex items-center justify-center">
+  <div class="container h-auto w-auto grid grid-cols-1 grid-rows-3 rounded-md overflow-hidden">
+    <div class="row-span-1 bg-white h-68 w-72 pt-6 pb-6 pl-5 pr-5 text-left flex flex-col gap-3 overflow-hidden">
+      <h1 class="text-xl text-cyan font-semibold">Join our community</h1>
+      <h3 class="text-base text-brightYellow font-medium">30-day, hassle-free money back guarantee</h3>
+      <p class="text-grayishBlue text-xs leading-5">Gain access to our full library of tutorials along with expert code reviews. 
+      Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    <div class="row-span-2 grid grid-row-2">
+      <div class="row-span-1 bg-cyan h-68 w-72 pt-6 pb-6 pl-5 pr-5 text-left flex-col overflow-hidden grid items-center">
+        <h1 class="text-white text-xl font-semibold pb-2" >Monthly Subscription</h1>
+        <div class="flex items-center gap-1"><span class="text-3xl text-white">&dollar;29</span> <p class="opacity-70 text-lightGray text-sm">per month</p></div>
+        <p class="text-white opacity-80 text-md pb-4">Full access for less than &dollar;1 a day</p>
+        <button class="w-full p-2 text-base rounded-md bg-brightYellow text-white font-semibold outline-none border-none">Sign Up</button>
+      </div>
+      <div class="bg-brightCyan row-span-1 h-68 w-72 pt-6 pb-6 pl-5 pr-5 text-left overflow-hidden grid items-center">
+        <h1 class="text-white text-xl font-semibold pb-2">Why Us</h1>
+        <p class="text-white opacity-70 text-sm">Tutorials by industry experts</p>
+        <p class="text-white opacity-70 text-sm">Peer &amp; expert code review</p>
+        <p class="text-white opacity-70 text-sm">Coding exercises</p>
+        <p class="text-white opacity-70 text-sm">Access to our GitHub repos</p>
+        <p class="text-white opacity-70 text-sm">Community forum</p>
+        <p class="text-white opacity-70 text-sm">Flashcard decks</p>
+        <p class="text-white opacity-70 text-sm">New videos every week</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
